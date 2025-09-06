@@ -16,14 +16,7 @@
     ]
   },
   "host_permissions": [
-    "*://localhost/*",
-    "*://yt-shaka-player.pages.dev/*",
-    "*://kira.ytjs.dev/*",
-    "*://*.youtube.com/*",
-    "*://*.googlevideo.com/*",
-    "*://*.googleusercontent.com/*",
-    "*://*.ytimg.com/*",
-    "*://*.ggpht.com/*"
+    "<all_urls>"
   ],
   "background": {
     "service_worker": "dist/background.bundle.js",
@@ -34,9 +27,11 @@
   "content_scripts": [
     {
       "matches": [
-        "*://localhost/*",
-        "*://yt-shaka-player.pages.dev/*",
-        "*://kira.ytjs.dev/*"
+        "<all_urls>"
+      ],
+      "exclude_matches": [
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
       ],
       "js": [
         "dist/content.bundle.js"
@@ -50,9 +45,11 @@
         "dist/injected.bundle.js"
       ],
       "matches": [
-        "*://localhost/*",
-        "*://yt-shaka-player.pages.dev/*",
-        "*://kira.ytjs.dev/*"
+        "<all_urls>"
+      ],
+      "exclude_matches": [
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
       ]
     }
   ]
