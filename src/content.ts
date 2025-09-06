@@ -6,11 +6,6 @@ function injectScript(): void {
     script.src = chrome.runtime.getURL('dist/injected.bundle.js');
 
     script.addEventListener('load', function() {
-      console.log(
-        '%cytc-bridge%c Initialized successfully.',
-        'background-color: #28a745; color: white; padding: 2px 4px; border-radius: 3px; font-weight: bold;',
-        'background-color: transparent; color: inherit;'
-      );
       this.remove();
     });
 
