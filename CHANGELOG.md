@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/LuanRT/ytc-bridge/compare/ytc-bridge-v1.1.2...ytc-bridge-v1.2.0) (2025-09-06)
+
+
+### Features
+
+* Allow ext on any website ([6cfaa1b](https://github.com/LuanRT/ytc-bridge/commit/6cfaa1b777b28ada77a99490dc82b7256c61283b))
+
 ## [1.1.2](https://github.com/LuanRT/ytc-bridge/compare/ytc-bridge-v1.1.1...ytc-bridge-v1.1.2) (2025-09-06)
 
 
