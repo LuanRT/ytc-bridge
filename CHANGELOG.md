@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/LuanRT/ytc-bridge/compare/ytc-bridge-v1.1.1...ytc-bridge-v1.1.2) (2025-09-06)
+
+
+### Bug Fixes
+
+* remove debug log and change fetch credentials to 'omit' ([bb762d7](https://github.com/LuanRT/ytc-bridge/commit/bb762d730b2d094374aa03526ec663c3f94cb277))
+
 ## [1.1.1](https://github.com/LuanRT/ytc-bridge/compare/ytc-bridge-v1.1.0...ytc-bridge-v1.1.1) (2025-09-06)
 
 
