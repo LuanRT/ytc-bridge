@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/LuanRT/ytc-bridge/compare/ytc-bridge-v1.1.0...ytc-bridge-v1.1.1) (2025-09-06)
+
+
+### Bug Fixes
+
+* update version to 1.1.0 in manifest.json and adjust release-please config ([30d0bea](https://github.com/LuanRT/ytc-bridge/commit/30d0bea5694a648e7b7bbbf5a280fe27da6b0889))
+
 ## [1.1.0](https://github.com/LuanRT/ytc-bridge/compare/ytc-bridge-v1.0.0...ytc-bridge-v1.1.0) (2025-09-06)
 
 
