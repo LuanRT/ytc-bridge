@@ -39,7 +39,7 @@ If you want to build the extension from the source code, follow these steps:
 
 The extension consists of three main parts:
 
-1.  **Injected Script** ([`src/injected.ts`](src/injected.ts)): This script is injected into the web page and exposes a `window.proxyFetch` function. Web apolications can use this function as a replacement for the standard `fetch` API to proxy requests through the extension.
+1.  **Injected Script** ([`src/injected.ts`](src/injected.ts)): This script is injected into the web page and exposes a `window.proxyFetch` function. Web applications can use this function as a replacement for the standard `fetch` API to proxy requests through the extension.
 2.  **Content Script** ([`src/content.ts`](src/content.ts)): This script acts as a message-passing bridge between the injected script (running in the web page's context) and the background script (running in the extension's context).
 3.  **Background Script** ([`src/background.ts`](src/background.ts)): This is the core of the extension. It listens for messages from the content script, performs the actual `fetch` requests, and dynamically adds and removes network request rules to modify headers, ensuring the requests are accepted by YouTube's servers.
 
