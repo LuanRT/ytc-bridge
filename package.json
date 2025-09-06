@@ -1,6 +1,6 @@
 {
   "name": "ytc-bridge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Acts as a proxy to enable requests to YouTube services.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
