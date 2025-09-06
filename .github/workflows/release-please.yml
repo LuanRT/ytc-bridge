@@ -39,12 +39,12 @@ jobs:
 
       - name: Zip artifact
         run: |
-          zip -r release.zip dist manifest.json rules.json LICENSE
+          zip -r ${{ steps.release.outputs.tag_name }}.zip dist manifest.json rules.json LICENSE
         if: ${{ steps.release.outputs.release_created }}
 
       - name: Upload artifact to release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release upload ${{ steps.release.outputs.tag_name }} ./ytc-bridge-${{ steps.release.outputs.tag_name }}.zip --clobber
+          gh release upload ${{ steps.release.outputs.tag_name }} ./${{ steps.release.outputs.tag_name }}.zip --clobber
         if: ${{ steps.release.outputs.release_created }}
