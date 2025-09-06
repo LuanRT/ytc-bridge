@@ -8,8 +8,6 @@ let ruleIdCounter = 4;
  * @param addRules - The rules to add.
  */
 async function addNetRequestRules(addRules: Rule[]): Promise<number[]> {
-  console.log('Rules:', await chrome.declarativeNetRequest.getSessionRules());
-  
   const rulesWithIds = addRules.map(rule => {
     // Very, very, very unlikely... but just in case.
     if (ruleIdCounter > Number.MAX_SAFE_INTEGER) {
@@ -71,7 +69,7 @@ async function handleFetchRequest(request: FetchRequest, sendResponse: (response
     const response = await fetch(url, {
       ...options,
       headers: {},
-      credentials: 'include'
+      credentials: 'omit'
     });
 
     const responseHeaders: Record<string, string> = {};
